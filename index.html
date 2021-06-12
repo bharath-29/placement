@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navigation Bar | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#">Scooter</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Scooters</a></li>
+        <li><a href="#">Wheels</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fa fa-arrow-right"></i>
+      </div>
+    </div>
+</nav>
+
+
+<div class="img">
+    <img src="assest/images/scooter.jpg">
+    
+</div>
+
+<div class="yes">
+
+</div>
+
+<div class="arrow">
+  <i class="fa fa-arrow-right"></i>
+</div>
+
+
+
+<div class="round">
+  <img src="assest/images/contact img.jpg">
+</div>
+
+
+
+<div class="imp">
+  <h2>Kick<br> scooter T17</h2>
+
+    <p>kick scooter T17 is developed<br> exclusively for <br>
+        global shared-scooter service<br> providers
+    </p>
+
+    
+</div>
+
+
+<div class="yes2">
+
+</div>
+
+<div class="arrow2">
+  <i class="fa fa-arrow-right"></i>
+</div>
+
+
+
+
+<div class="som">
+  
+</div>
+
+<div class="sam">
+  <h2>Order Now</h2>
+</div>
+
+
+    
+
+    <div class="text">
+        <h2>Features</h2>
+        
+    </div>
+
+
+    <div class="row">
+      <div class="course-col">
+          <h3>Semi Auto<br> Pilot</h3>
+          <p>
+              This system made you comfortable for driving
+
+          </p>
+      </div>
+
+      
+      <div class="course-col">
+          <h3>Sagway Cloud<br>System</h3>
+          <p>
+              We are offering those new system in the upcoming Days. </p>
+      </div>
+
+      
+      <div class="course-col">
+          <h3>Low Maintainence<br>Cost</h3>
+          <p>
+              Our Scooter's are low at cost and they are easily available. </p>
+      </div>
+
+
+  </div>
+
+
+
+
+  
+
+
+
+
+  <div class="banner">
+
+    
+  </div>
+  <div class="about"></div>
+    <div class="content"></div>
+
+       
+    
+
+
+
+
+
+
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+
+  </body>
+  </html>
+
+
+
+
+
